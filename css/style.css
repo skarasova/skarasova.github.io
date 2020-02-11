@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Berkshire+Swash|Open+Sans&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+}  
+ body, html{
+    width: 100%;
+    height: 100%;
+} 
+body{
+    background: url(https://data.1freewallpapers.com/download/light-water-eagles-fly-away-manipulation-colors-speedart-skies-sea-high-quality.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;    
+} 
+a{
+    color: rgb(107, 75, 121);
+    text-decoration: none;
+    transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+}
+a:hover{
+    color: rgb(94, 180, 214);
+    text-decoration: none;
+    transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -webkit-transition: all 3s ease-out; 
+} 
+.header{
+    float: left;
+    width: 99.4%;
+    padding: 0.3%;
+    background-color: white;
+    border-bottom: 0.3vmax solid #C7C7C7;
+}
+.logo a img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 10%;  
+}
+.company{
+    font-size: 2em;
+    font-family: 'Aldrich', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(16, 3, 20);
+}
+@media (min-width: 950px){
+    header div .logo a img{
+        margin-left: 15%;
+    }
+    .logo{
+        float: left;
+        width: 30%;
+    }
+    .about{
+        float: left;
+        width: 37%;
+    }
+    .reg_auth{
+        float: right;
+        width: 30%;
+    }
+}
+@media (max-width: 949px) and (min-width: 525px){
+    header div .logo a img{
+        margin-left: 15%;
+    }
+    .logo{
+        float: left;
+        width: 50%;
+    }
+    .about{
+      visibility: hidden;
+      display: none;
+    }
+    .reg_auth{
+        float: right;
+        width: 50%;
+    }
+    .trainer p{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (max-width: 524px) {
+    header div .logo a img{
+        margin-left: 5%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .about{
+      visibility: hidden;
+      display: none;
+    }
+    .reg_auth{
+        visibility: hidden;
+        display: none;
+    }
+    .trainer p{
+        visibility: hidden;
+      display: none;
+    }
+}
+.about{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2,5vh;
+    padding-top: 1.5vmax;  
+    font-weight: bold;
+}
+.about a{
+    padding-right: 5%;
+}
+ .btn{
+    float: right;
+    min-width: 95px;
+    max-width: 110px;
+    margin-right: 10%;
+    margin-top: 5px;
+    border-radius:5px;
+    padding: 5px 9px;
+    background-color: rgb(179, 148, 185);
+    border-bottom: 4px solid rgb(116, 98, 122);
+    border-right:2px solid rgb(101, 83, 107);
+    width: 11vw;
+    border-top: 2px solid rgb(226, 188, 240);
+    border-left: 1px solid rgb(226, 188, 240);
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+div a:hover .btn{
+    border-bottom: 2px solid rgb(95, 76, 102);
+    border-right: 1px;
+    margin-top: 7px;
+}
+div a:active .btn{
+    border-bottom: 0;
+    border-right:0;
+    margin-top: 9px;
+}
+#fill{
+    position: fixed;
+    width: 100%;
+    height: 27%;
+    background-color: rgb(218, 238, 231);
+    z-index: 100;
+    display: none;
+    border: rgb(101, 83, 107) solid 1px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.7);
+    
+   
+}
+.input{
+    margin: 5%;
+    margin-left: 61.5%;
+}
+
+
+#modal{
+    position: absolute;
+    z-index: 101;
+    width: 30vw;
+    height: 15vh;
+    display: none;
+  
+}
+#fill.open, #modal.open{
+   display: block !important;
+   
+}
+#reg-button{
+  font-size: 10px;
+  margin-top: 2%;
+}
+#close-mod{
+    margin: 5px;
+}
+
+nav{
+    background-color: #009C87;
+    width: 99.4%;
+    padding:10px 0.3%;
+    border-bottom: 2px solid #C7C7C7;
+    font-family: 'Source Sans Pro', sans-serif;
+    float: left; 
+}
+ul li{
+   list-style-type: none
+}
+nav a{
+    float: left;
+    display: block;
+    transition: .4s ease-in-out; 
+}
+nav  a, #search {
+    color: white;
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+nav a:hover{
+    color: #E4F735;
+}
+#search{
+    float: right;
+    cursor: pointer;
+    margin-right: 5%;
+    padding: 10px;
+}
+input, textarea{
+    margin-right: 10px;
+    border-radius: 5px;
+    border: dimgray solid 1px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.7);
+    padding-left: 5px;
+    outline:none;
+    color: silver;
+    height: 1.7em;
+}
+textarea{
+   height: 150px;
+   max-height: 160px;
+}
+#search:hover{
+    color: #aa90aa;
+    font-weight: bolder;
+}
+.topmenu {
+  text-align: center;
+  padding: 10px 0;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #d2d2d2;
+  top: 16px;
+  box-shadow: 4px -2px 0 #d2d2d2;
+  transform: rotate(30deg);
+}
+.topmenu > li:last-child:after {
+  background: none;
+  box-shadow: none;
+}
+.topmenu > li > a {
+  padding: 12px 26px;
+}
+.submenu li a:hover { 
+    color: #7ca193; 
+} 
+.submenu {
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  width: 12em;
+  background: #d0dff0;
+  border: 1px solid #ededed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .4s ease-in-out;
+  border-radius: 5px;
+}
+.submenu li a {
+  padding: 10px 50px 10px 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 1em;
+  color: #684c68;
+  font-weight: bolder;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    opacity: 0.5;
+    padding: 4px;
+    z-index: 100;
+}
+.fixed:hover{
+    opacity: 1;
+}
+.menu-on{
+   font-size: 1.4em;
+   margin-left: 20px;
+   margin-top: 4px;
+   float: left;
+   cursor: pointer;
+}
+.mobail-menu{
+    display: none;
+    width: 100%;
+    float: left;
+    background-color: rgb(60, 82, 79);
+    border-bottom: 2px solid #C7C7C7;
+}
+@media (min-width: 785px){
+    .menu-on{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media(max-width: 784px){
+    .menu-hiden{
+        display: none;
+        visibility: hidden;
+    }
+}
+.wraper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+.owl-carousel {
+    height: 21em;
+    background: silver;
+    padding: 1px;
+    float: left;
+}
+ div .item{
+    width: 31em;
+    height: 17em;
+    background-color: rgb(101, 83, 107);
+    margin-left: 2px;
+    overflow: hidden;    
+} 
+footer{
+    float: left;
+    width: 98%;
+    padding: 1%;
+    border-top: 0.3vmax solid #C7C7C7;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(231, 223, 235);
+    font-size: 0.7em;  
+}
+
+.company-name-footer{
+    margin-right: 5%;
+    color: rgb(16, 3, 20);
+    float: right;
+    font-size: 2em;
+    font-weight: bolder;
+}
+@media(max-width: 1080px){
+    .clear{
+        clear: both;
+    }
+}
+.company-name-footer span{
+    font-family: 'Aldrich', sans-serif;
+    font-weight: bolder;
+}
+div .footer-menu a{
+    font-size: 2.5vh;
+    padding-right: 3%; 
+}
+div .footer-menu{
+    padding-bottom: 3%;
+}
+.rights{
+    float: left;
+    margin-bottom: 2%;
+}
+.social{
+    float: right;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 3vh;
+}
+.social a{
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 2%;
+    width: 2em;
+    height:2em ;
+    float: right;
+    text-align: center;
+    line-height:2em;
+    font-size: 1.5em; 
+}
+.social a:first-child{
+    margin-right: 10%;
+}
+.social a:hover{
+    background-color: rgb(207, 203, 207);
+    transform: scale(1.4) scaleZ(1.0) rotateX(9deg) rotateY(9deg);
+}
+@media(max-width: 520px){
+    .company-name-footer{
+        display: none;
+    }
+    .social{
+        width: 100%;
+    }
+}
+div.scrollup {
+    position: fixed; 
+    color: #fff; 
+    right: 0.5em; 
+    bottom:1em;
+    font-size: 3.5em; 
+    cursor: pointer; 
+    display: none;
+    text-align: center;
+}
+.scrollup:hover {
+    color: rgb(128, 130, 133);
+ }
+      
